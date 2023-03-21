@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrap">
+            <!-- Before Submit call function register and return false for no refresh page -->
+            <form id="form" action="" onsubmit="register();return false">
+                <h1><span>Register</span></h1>
+                <div class="input">
+                    <!-- !Null -->
+                    <input type="text" id="fname" placeholder="First Name" />
+                </div>
+                <div class="input">
+                    <input type="text" id="lname" placeholder="Last Name" />
+                </div>
+                <div class="input">
+                    <!-- !Null  -->
+                    <input type="email" id="email" placeholder="Email address" />
+                </div>
+                <div class="input">
+                    <!-- >= 8 -->
+                    <input type="password" id="password" placeholder="Password" />
+                </div>
+                <div>
+                    <p>Please, make sure your details are correct</p>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Submit</button>
+                </div>
+                <div id="error"></div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
